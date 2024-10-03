@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            background-color: indigo;
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        form {
+            margin-left: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 180px;
+            vertical-align: middle;
+        }
+
+        input[type="text"], input[type="email"]{
+            background-color: rgba(255, 255, 255, .5);
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, .75);
+            border: unset;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus {
+            background-color: white;
+            color: black;
+        }
+
+        .right {
+            height: 30px;
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            vertical-align: middle;
+        }
+
+        input[type="button"] {
+            height: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: 5px;
+
+            box-shadow: 0 0  4px white;
+            background-color: darkblue;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        input[type="button"]:first-child{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Регистрация постоянного клиента</h1>
+    <form>
+        <div class="form-group">
+            <label>Фамилия:</label>
+            <input type="text" class="right">
+        </div>
+        <div class="form-group">
+            <label>Имя:</label>
+            <input type="text" class="right">
+        </div>
+        <div class="form-group">
+            <label>Отчество:</label>
+            <input type="text" class="right">
+        </div>
+        <div class="form-group">
+            <label>Ваш возраст:</label>
+            <input type="text" class="right">
+        </div>
+        
+        <div class="form-group" style="display: flex;">
+            <label>Пол:</label>
+            <div class="right">
+                <input type="checkbox"><span>Мужской</span>
+                <input type="checkbox"><span>Женский</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" class="right">
+        </div>
+        <div class="form-group">
+            <label>Страна проживания:</label>
+            <input type="text" class="right">
+        </div>
+
+        <div class="form-group" style="display: flex;">
+            <label style="margin-right: 7px;">Откуда вы узнали о нас?</label>
+            <select style="height: 25px;">
+                <option disabled selected hidden>Выберите вариант</option>
+                <option>Option</option>
+                <option>Option</option>
+                <option>Option</option>
+                <option>Option</option>
+                <option>Option</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label style="height: 30px;">Дата заполнения</label>
+            <input type="date" style="width: 130px; height: 30px;">
+        </div>
+
+        <div style="display: flex;">
+            <input type="button" value="Регистрация">
+            <input type="button" value="Отмена">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS-BOARD</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tbody tr:nth-child(2n+1) td:nth-child(2n+3),
+        tbody tr:nth-child(2n+2) td:nth-child(2), 
+        tbody tr:nth-child(2n+2) td:nth-child(4),
+        tbody tr:nth-child(2n+2) td:nth-child(6), 
+        tbody tr:nth-child(2n+2) td:nth-child(8)
+        {
+            background-color: black;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        tbody td{
+            width: 50px;
+            height: 50px;
+        }
+
+        thead td,
+        tfoot td
+        {
+            height: 20px;
+            background-color: grey;
+        }
+
+        tbody td:first-child,
+        tbody td:last-child
+        {
+            width: 20px;
+            background-color: grey;
+        }
+
+        thead td:first-child,
+        thead td:last-child, 
+        tfoot td:first-child,
+        tfoot td:last-child{
+            border: unset;
+            background-color: unset;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <td></td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+            <td></td>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <td>8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+        </tr>
+        </tbody>
+        
+        <tfoot>
+        <tr>
+            <td></td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+            <td></td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

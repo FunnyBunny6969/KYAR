@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT</title>
+    <style>
+        @font-face {
+            font-family: Caveat;
+            src: url(fonts/Caveat.ttf);
+        }
+        
+        @font-face {
+            font-family: Exo2;
+            src: url(fonts/Exo2.ttf);
+        }
+
+        @font-face {
+            font-family: Comfortaa;
+            src: url(fonts/Comfortaa.ttf);
+        }
+
+        h1 {
+            font-family: Caveat;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 45px;
+            text-transform: uppercase;
+            text-shadow: 10px 10px 5px red;
+        }
+        
+        h2 {
+            font-family: Exo2;
+            margin-bottom: 1.2em;
+            margin-top: 0.2rem;
+            text-align: left;
+            text-indent: 25px;
+        }
+
+        p, li{
+            font-family: Comfortaa;
+            text-indent: 25px;
+            text-align: justify;
+            margin: 0;
+            line-height: 200%;
+            font-size: 20px;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            font-size: 45px;
+            color: white;
+            background-color: hsla(275, 100%, 10%, 1);
+        }
+
+        .without_margin {
+            margin-bottom: 0;
+        }
+
+        li::marker {
+            color: blue;
+        }
+
+        .Last_p {
+            font-size: 20px;
+            font-family: Comfortaa;
+
+            text-align: unset;
+            margin: unset;
+            line-height: unset;
+            text-indent: unset;
+        }
+
+        .Last_p::first-line {
+            color: red;
+            margin-bottom: 25px;
+        }
+
+        .Last_p::first-letter {
+            font-weight: unset;
+            font-size: unset;
+            color: unset;
+            background-color: unset;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HEADER</h1>
+    <h2>Header</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias illo velit perspiciatis. Excepturi, nulla soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum commodi facere doloremque possimus ex iure, beatae vel quisquam adipisci architecto pariatur laborum aliquam eos totam porro reprehenderit nisi? Vero.
+    Architecto eius molestias officiis veniam, reprehenderit excepturi at similique, delectus consectetur consequatur ad a, sit nostrum error assumenda aperiam nemo doloremque vero. Tenetur qui distinctio, reprehenderit veniam incidunt facere eveniet!
+    Ut mollitia accusamus necessitatibus dolores? In excepturi dolor rerum autem, quidem assumenda dignissimos ipsam! Ut numquam consectetur suscipit. Nihil culpa in esse minima voluptatibus, eaque neque inventore ducimus. Fugit, sequi.
+    Quis quo nisi voluptates sed earum accusamus cum dolores aperiam fuga, nam qui magnam veniam iusto odit repudiandae tempora unde. Aliquid consectetur voluptatibus aliquam ad laboriosam excepturi quis nihil aut.
+    Suscipit voluptatem voluptates nesciunt a adipisci rerum omnis repellendus minus, ipsum dolores asperiores eum labore natus pariatur nihil eos aperiam? Adipisci, eos repellat dolorum sequi repudiandae blanditiis? At, illo beatae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, necessitatibus.</p>
+    <h2>Header</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quas quasi ipsum.</p>
+    <h2 class="without_margin">ЗАГОЛОВОК ПЕРЕД СПИСКОМ</h2>
+    <ol type="I">
+        <li>FIRST</li>
+        <li>SECOND</li>
+        <li>ТРЕТИЙ</li>
+        <li>FOURTH</li>
+        <li>ФИФС</li>
+    </ol>
+    <p class="Last_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis mollitia maiores praesentium, repudiandae impedit laudantium officia numquam tempore, non quae omnis. Error dolorum rem doloremque, assumenda voluptates dolores voluptate quia.
+    Eius praesentium provident, atque quo nulla ad dicta corrupti voluptatum animi non? Amet facilis reiciendis expedita.
+    Dignissimos deleniti minima soluta maiores ipsum!</p>
+</body>
+</html>
