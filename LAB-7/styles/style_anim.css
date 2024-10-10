@@ -1,0 +1,136 @@
+.task1 img {
+    width: 600px;
+    display: block;
+}
+
+.task1 img:nth-child(1){
+    transform: scale(0.5);
+}
+
+.task1 img:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.task1 img:nth-child(3){
+    transform: translate(50px, 0px);
+}
+
+.task1 img:nth-child(4):hover{
+    rotate: -20deg;
+}
+
+button{
+    height: 64px;
+    width: 200px;
+    margin-right: 60px;
+    font-size: 18px;
+    background-color: none;
+    border: none;
+}
+
+button:nth-child(1):hover{
+    background-color: black;
+    color: white;
+}
+
+button:nth-child(2):hover{
+    border: solid 8px red;
+    outline: solid 8px yellow;
+    background-color: white;
+}
+
+button:nth-child(3):hover{
+    background-color: white;
+    border-top: solid 8px green;
+    border-bottom: solid 8px green;
+}
+
+button:nth-child(4):hover{
+    background-color: white;
+    border-right: solid 8px blue;
+    border-left: solid 8px blue;
+}
+
+button:nth-child(5):hover{
+    background-image: radial-gradient(ellipse 
+    50% 80% at center,
+     yellow, magenta, aqua);
+    font-weight:bolder;
+}
+
+.task3{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    perspective-origin: center;
+}
+
+.task3 img {
+    width: 450px;
+    margin-right: 30px;
+}
+
+.task3:nth-child(2) img{
+    transform: rotateY(45deg);
+}
+
+.task3:nth-child(4) img{
+    transform: rotateY(-45deg);
+}
+
+.task3:nth-child(odd) img{
+    transform: rotateX(45deg);
+}
+
+@keyframes task4_animation_imgs1{
+    0%{transform: rotateY(45deg);}
+    50%{transform: rotateY(0deg);}
+    100%{transform: rotateY(0deg);}
+}
+
+@keyframes task4_animation_imgs2{
+    0%{transform: rotateY(45deg) translate(50px);}
+    50%{transform: rotateY(0deg) translate(50px);}
+    100%{transform: rotateY(0deg) translate(550px);
+    filter: blur(10px);}
+}
+@keyframes task4_animation_imgs3{
+    0%{transform: rotateY(45deg) translate(100px);}
+    50%{transform: rotateY(0deg) translate(100px);}
+    100%{transform: rotateY(0deg) translate(1100px);
+    filter: grayscale(1);}
+}
+@keyframes task4_animation_imgs4{
+    0%{transform: rotateY(45deg) translate(150px);}
+    50%{transform: rotateY(0deg) translate(150px);}
+    100%{transform: rotateY(0deg) translate(1650px);
+    filter: invert(1);}
+}
+
+.task4{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    perspective-origin: center;
+}
+
+.task4 img {
+    width: 500px;
+    position: absolute;
+}
+
+.task4:nth-child(1) img{
+    animation: task4_animation_imgs1 3s linear infinite;
+}
+
+.task4:nth-child(2) img{
+    animation: task4_animation_imgs2 3s linear infinite;
+}
+
+.task4:nth-child(3) img{
+    transform: translate(100px);
+    animation: task4_animation_imgs3 3s linear infinite;
+}
+
+.task4:nth-child(4) img{
+    transform: translate(150px);
+    animation: task4_animation_imgs4 3s linear infinite;
+}
