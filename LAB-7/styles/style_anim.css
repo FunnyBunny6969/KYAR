@@ -134,3 +134,34 @@ button:nth-child(5):hover{
     transform: translate(150px);
     animation: task4_animation_imgs4 3s linear infinite;
 }
+
+@keyframes HEADER_OPACITY {
+    0%, 100%{opacity: 0%;}
+    50%{opacity: 80%;}
+}
+
+h1{
+    animation: HEADER_OPACITY 0.5s linear infinite;
+}
+
+.images {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 8px red solid;
+    position: relative;
+    /*overflow: hidden;*/
+    display: flex;
+}
+
+.images img{
+    display: inline-block;
+    animation: slide 5s linear;
+    width: 400px;
+    height: auto;
+}
+
+@keyframes slide{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-1200px);}
+}
