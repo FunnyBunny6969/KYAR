@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEW</title>
+    <style>
+        h1{
+            visibility: hidden;
+        }
+        h2:active + h1{
+            visibility: visible;
+        }
+
+        nav ul ul{
+            visibility: hidden;
+        }
+        nav:hover ul ul{
+            visibility: visible;
+        }
+
+        nav>ul>li {
+            display: block;
+            box-sizing: border-box;
+            width: 385px;
+            background-color: yellow;
+            font-size: 30px;
+            padding: 15px;
+            color: indigo;
+            border: black 1px solid;
+        }
+
+        nav ul ul{
+            padding: 0px;
+        }
+
+        nav ul ul li{
+            box-sizing: border-box;
+            display: block;
+            width: 205px;
+            padding: 15px;
+            
+            background-color: rgb(255,160,122);
+            border: dashed 3px black;
+            font-size: 30px;
+            margin-top: -4px;
+        }
+
+        nav ul ul li:nth-child(1){
+            margin-top: 0;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <ul><li>Меню</li>
+            <ul>
+                <li><a href="../LAB-5/form.html">Форма</a></li>
+                <li><a href="../LAB-5/chess-board.html">Шахматная доска</a></li>
+                <li><a href="../LAB-6/new-page.html">Фотогалерея</a></li>
+            </ul>
+        </ul>
+    </nav>
 </body>
 </html>
