@@ -15,24 +15,50 @@
             height: 60px;
             text-align: center;
             line-height: 60px;
-            border: 1px black solid;
+            border: 2px black solid;
             font-size: 25px;
+            background-size: 0;
+            background-repeat: no-repeat;
+        }
+
+        div:nth-child(n+2){
+            visibility: hidden;
+            margin-left: 30px;
+        }
+
+        nav:hover div{
+            visibility: visible;
+        }
+
+        nav div span:nth-child(n+2){
+            visibility: hidden;
+        }
+
+        nav div:nth-child(n+2):hover span{
+            visibility: visible;
+        }
+
+        nav span:hover{
+            background-size: auto 60px;
         }
     </style>
 </head>
 <body>
     <nav>
         <div>
-            <span>ИТ</span>
+            <span style="background-image: url(imgs/БГТУ.png);">БГТУ</span>
+        </div>
+        <div>
+            <span style="background-image: url(imgs/фит.jpg);">ИТ</span>
             <span>Кафедра ИСиТ</span>
             <span>Кафедра ИиВД</span>
             <span>Кафедра ПИ</span>
         </div>
         <div>
-            <span>ИТ</span>
-            <span>Кафедра ИСиТ</span>
-            <span>Кафедра ИиВД</span>
-            <span>Кафедра ПИ</span>
+            <span style="background-image: url(imgs/пим.jpg);">ПиМ</span>
+        </div>
+        <div>
+            <span style="background-image: url(imgs/хтит.png);">ХТиТ</span>
         </div>
     </nav>
 </body>
