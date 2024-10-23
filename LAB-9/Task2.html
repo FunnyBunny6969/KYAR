@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 23vh 23vh 23vh 23vh;
+            grid-gap: 1vw 2vh;
+            grid-template-areas: 
+            "x1  x2  x3  x4  x5"
+            "x6  x7  x8  x9  x9"
+            "x10 x10 x11 x9  x9"
+            "x10 x10 x12 x13 x14";
+        }
+
+        .grid div{
+            border: 2px solid black;
+        }
+
+        img{
+            width: auto;
+            height: 70%;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div style="grid-area: x1;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p>
+        </div>
+        <div style="grid-area: x2;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x3;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x4;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x5;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x6;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x7;"><img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p>
+        </div>
+        <div style="grid-area: x8;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p>
+        </div>
+
+        <div style="grid-area: x9;">
+            <img src="img/CAT.gif" style="width: 100%; height: 100%">
+        </div>
+
+        <div style="grid-area: x10; text-align:left; overflow: hidden;">
+            <img src="img/catWithPiano.jpg" style="height: auto; width: 60%; float: left;" >
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis delectus rerum et quibusdam commodi consequatur repellendus, optio, distinctio laudantium, at reiciendis aperiam architecto? Deleniti blanditiis, ipsa alias odio fuga officia.
+            Ipsam molestiae nesciunt laboriosam quam, fugit ad nisi deserunt quibusdam, dolorem rerum, iste eveniet. Amet, voluptatem autem odio inventore quisquam, cum sint quo sed doloribus dolorum, illo voluptatibus soluta delectus.
+            Perspiciatis, ipsa! Officia excepturi a laborum fugit atque, voluptas quia, aliquam qui saepe eligendi quam delectus unde enim deleniti ratione, nam recusandae culpa quos. Error esse earum quia voluptate mollitia.
+        
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis culpa iusto cumque. Voluptate possimus quam alias sapiente nesciunt magni dolorem, reprehenderit laboriosam iusto est minus? Ab voluptatum error impedit amet.
+            Eaque nostrum, autem, quo consectetur saepe, ratione amet voluptatem rerum officia optio vitae odit maxime rem repellat atque temporibus accusantium nam. Esse, dolore deserunt?
+            Numquam blanditiis id laboriosam tempore labore est odit quasi omnis nam officiis voluptate esse porro, tempora aperiam. Architecto totam adipisci nulla, aperiam harum eos vel ipsum accusantium? Nesciunt, voluptate quisquam!</p>
+        </div>
+
+        <div style="grid-area: x11;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x12;">
+            <img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p></div>
+        <div style="grid-area: x13;"><img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p>
+        </div>
+        <div style="grid-area: x14;"><img src="img/pigeon.jpg">
+            <p>Название для каждой фотографии</p>
+        </div>
+    </div>
+</body>
+</html>

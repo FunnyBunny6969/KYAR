@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-template-rows: 14vh 65vh 14vh;
+            grid-gap: 1vw 2vh;
+            grid-template-areas: 
+            "nav H       H"
+            "nav Content Aside"
+            "F   F       F";
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grid div{
+            border: 2px solid black;
+        }
+
+        nav, header, article, aside, footer{
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        nav a{
+            text-decoration: unset;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        header, footer{
+            padding: unset;
+        }
+
+        p{
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <nav style="grid-area: nav;">
+            <a href="https://ru.wikipedia.org/wiki/HTML5">HTML5</a> 
+            <br>
+            <a href="https://en.m.wikipedia.org/wiki/CSS#CSS_3">CSS3</a> 
+            <br>
+            <a href="https://en.wikipedia.org/wiki/CSS_grid_layout">GRID</a>
+        </nav>
+        <header style="grid-area: H;">
+            <h1 style="padding: unset; margin: unset; line-height: 14vh; font-size: 70px;">Content Header</h1>
+        </header>
+        <article style="grid-area: Content;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsum? Totam, laboriosam et beatae rerum officiis blanditiis debitis ullam nostrum, vel nam exercitationem quam velit ipsa expedita sed recusandae libero.
+            Molestias odio excepturi commodi itaque laudantium eaque, aliquam adipisci, ipsum est ratione inventore non hic rem laboriosam blanditiis asperiores rerum vitae fuga cum ad. Praesentium quo quia quibusdam consectetur facere!
+            Dolorem, illo. Quo hic sequi, iure asperiores sunt aperiam, suscipit voluptate vel voluptates iusto nostrum impedit, sit vero. Tempora velit, expedita optio doloremque cupiditate repellendus eos ea distinctio ipsam a!
+            Excepturi cumque eligendi debitis, praesentium quibusdam quasi amet. Autem accusamus obcaecati excepturi expedita suscipit quibusdam, praesentium fugiat tempora incidunt aliquid porro deleniti error optio, nobis aspernatur esse libero, aut amet!
+            Quae nesciunt molestiae impedit suscipit libero aperiam ratione veniam. Provident quod culpa suscipit corrupti facilis, veniam vel eius consequuntur qui, voluptate aut alias, quam earum eligendi mollitia cupiditate deleniti expedita.
+            Minus laboriosam illo repellendus saepe error ipsum nulla aliquid, ratione necessitatibus animi aspernatur pariatur unde dicta voluptate maxime ducimus aliquam explicabo cumque. Cumque tempora dicta vitae pariatur molestias nostrum iusto!
+            Dolorum, aliquam saepe blanditiis reiciendis laudantium esse non culpa libero molestiae fugiat iure ab accusantium placeat quidem voluptate nemo. Nisi ipsa rem corrupti iusto magni nostrum accusantium id beatae quam.</p>
+        </article>
+        <aside style="grid-area: Aside;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nihil recusandae esse aliquam tempore adipisci harum accusamus doloremque explicabo veritatis! Maiores ab ex sint recusandae quis deserunt consequuntur repellat placeat.
+            Dolorem, atque ipsam excepturi quia sed ipsa distinctio ad expedita perferendis voluptatibus cumque ut recusandae laudantium pariatur accusamus aut veritatis obcaecati saepe neque temporibus natus, adipisci sit! In, cumque vero?
+            Ut consequuntur, nemo expedita consectetur dolorem eveniet cupiditate saepe voluptate facere. Repudiandae, quibusdam rerum. Veritatis tenetur quae voluptatum. Perspiciatis ex quisquam natus numquam incidunt unde debitis saepe rem illum ad!
+            Aliquam aspernatur unde asperiores iste quaerat corporis eaque harum quia ea assumenda iusto, est veritatis tempore nesciunt aperiam recusandae! Dolorem sit amet dignissimos eaque. Unde magni eos suscipit quo animi.</p>
+        </aside>
+        <footer style="grid-area: F; text-align: center;">
+            <h1 style="padding: unset; margin: unset; line-height: 14vh; font-size: 30px;">
+            Бурский А.С. ФИТ 1кр 6ПИ</h1>
+        </footer>
+    </div>
+</body>
+</html>
