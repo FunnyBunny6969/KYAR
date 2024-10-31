@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1280.css" media="(max-width: 1280px)">
+    <title>Document</title>
+    <style>
+        @import url(css/style768.css) (max-width: 768px);
+
+        header{
+            width: 100%;
+            height: 90px;
+            border: solid 1px black;
+            text-align: center;
+            margin-bottom: 25px;
+            align-content: space-around;
+            background-image: url(img/lines.png);
+            background-repeat: no-repeat;
+            background-size: 45px;
+            background-position: 90%;
+        }
+
+        .menu-toggle{
+            display: none;
+        }
+
+        .menu-toggle:checked + header + nav {
+            position: relative;
+            visibility: visible;
+        }
+
+        main{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 25px;
+        }
+
+        main div{
+            flex: 1;
+            border: 1px solid black;
+        }
+
+        main div:nth-child(2){
+            flex: 1.5;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        main div:last-child{
+            display: flex;
+            flex-direction: column;
+        }
+
+        main div:last-child audio{
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+
+        video {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        nav a{
+            display: block;
+            text-decoration: unset;
+            flex: 1;
+            height: 35px;
+            align-content: space-around;
+            border: 1px black solid;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        footer{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        footer div{
+            margin: 1%;
+            width: 48%;
+        }
+
+        footer div img{
+            width: 100%;
+        }
+
+        footer p{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        @media(max-width:480px){
+            footer p{
+                color: red;
+            }
+        }
+
+        @media(max-width: 1280px){
+            footer{
+                flex-direction: column;
+            }
+
+            footer div{
+                margin: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 900px){
+            main{
+                flex-direction: column;
+            }
+
+            main div{
+                margin-bottom: 25px;
+            }
+
+            main div:last-child{
+                margin-bottom: 0;
+            }
+
+            main div:nth-child(2){
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+
+    <header onclick="document.getElementById('menu-toggle').click()" id="header">
+        <h1>Заголовок</h1>
+    </header>
+
+    <nav>
+        <a href="#header">Заголовок</a>
+        <a href="#videos">Ячейка 1</a>
+        <a href="#text">Ячейка 2</a>
+        <a href="#audios">Ячейка 3</a>
+    </nav>
+
+    <main>
+        <div id="videos">
+            <video controls autoplay muted loop>
+                <source src="video/Mother's day.mp4">
+            </video>
+            <video controls autoplay muted loop>
+                <source src="video/i n f i n i t e  DRAGON DREAM FEET - The original.mp4">
+            </video>
+            <video controls autoplay muted loop>
+                <source src="video/Мега мозг мем.mp4">
+            </video>
+        </div>
+
+        <div style="padding: 20px;" id="text">
+            <h1>CSS Flexible Box Layout</h1>
+            <p>CSS Flexible Box Layout, commonly known as Flexbox,[2] is a CSS web layout model.[4] It is in the W3C's candidate recommendation (CR) stage.[2] The flex layout allows responsive elements within a container to be automatically arranged depending on viewport (device screen) size.</p>
+            <h3>Concepts</h3>
+            <p>Most web pages are written in a combination of HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). In short, HTML specifies the content and logical structure of the page, while the CSS specifies how it looks: its colors, fonts, formatting, layout, and styling.
+
+CSS flex-box layout is a particular way to specify the layout of HTML pages.
+
+One of the most defining features of the flex layout is its ability to form-fit, based on its viewing environment. Flex boxes can adjust in size—either decreasing, to avoid unnecessarily monopolizing space, or increasing to make room for contents to fit within its boundaries. Moreover, the flex layout is less restrictive in terms of content flow than that of other CSS layout models, which are generally uni-directional. The flex directional flow can be specified rightwards, leftwards, upwards, or downwards. Individual items within a flex container may also be automatically rearranged to suit the available layout space.[3]</p>
+            <h3>History</h3>
+            <p>From the late 2000s onward, the intensive use of the Web by mobile agents motivated "liquid layouts" and responsive elements for the growing variety of screen sizes.[5] In the 2010s, the intensive use of popular JavaScript layout frameworks, such as Bootstrap, inspired CSS flex-box and grid layout specifications. [6]
+
+CSS modules included solutions akin to this, like Flexbox[2] and grid.[7] Flexbox is originally based on a similar feature available in XUL, the user interface toolkit from Mozilla, used in Firefox.[8][9]
+
+As of December 2022, 99.68% of installed browsers (99.59% of desktop browsers and 100% of mobile browsers) support CSS Flexible Box Layout.[10]</p>
+
+        </div>
+
+        <div style="padding: 20px;" id="audios">
+            <audio controls loop>
+                <source src="audio/y2mate.com - i n f i n i t e  DRAGON DREAM FEET  The original.mp3">
+            </audio>
+            <audio controls loop>
+                <source src="audio/videoplayback.weba">
+            </audio>
+            <audio controls loop style="margin-bottom: 0;">
+                <source src="audio/videoplayback.m4a">
+            </audio>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+        <div>
+            <img src="img/5794279s-960.jpg">
+            <p style="font-weight: bold;">Надпись</p>
+        </div>
+    </footer>
+</body>
+</html>
