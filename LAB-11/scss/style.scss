@@ -1,0 +1,163 @@
+%border1{
+    border: 2px black solid;
+}
+
+@mixin h11($mbn){
+    margin: 0;
+    display: block;
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    @extend %border1;
+    margin-bottom: $mbn;
+
+}
+
+$border_color_2: rgb(113, 169, 237);
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+    @extend %border1;
+    align-items: center;
+    margin-bottom: 3vh;
+
+    .logo{
+        flex: 1;
+        @extend %border1;
+        border-color: $border_color_2;
+        margin-right: 10%;
+        height: 10vh;
+        margin-left: 3%;
+
+        text-align: center;
+        line-height: 10vh;
+    }
+
+    nav{
+        flex: 3;
+        display: flex;
+        justify-content: space-around;
+
+        span{
+            @extend %border1;
+            line-height: 30px;
+            height: 30px;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 69vh;
+    margin-bottom: 2vh;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    main{
+        flex: 7;
+        margin-right: 25px;
+
+        h1{
+            @include h11(3vh);
+            +section{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 3vh;
+
+                article{
+                    height: 27vh;
+                    width: 30%;
+
+                    @extend %border1;
+
+                    text-align: center;
+                    line-height: 25vh;
+                }
+            }
+
+            &:nth-of-type(2) + section{
+                display: flex;
+                justify-content: space-around;
+                div{
+                    width: 20%;
+                    height: 18vh;
+                    @extend %border1;
+                }
+            }
+        }
+    }
+
+    aside{
+        flex: 3;
+
+        form{
+            height: 27vh;
+            @extend %border1;
+            margin-bottom: 1vh;
+
+            text-align: center;
+            line-height: 27vh;
+        }
+
+        h1{
+            @include h11(1vh);
+        }
+
+        section{
+            @extend %border1;
+            height: 35vh;
+            display: block;
+            padding: 22px 20px 0px 8px;
+            display: flex;
+            aside{
+                flex: 1;
+                div{
+                    @extend %border1;
+                    height: 13vh;
+                    margin-right: 18px;
+                    margin-bottom: 5px;
+                    &:nth-of-type(2){
+                        height: 16vh;
+                    }
+                }
+            }
+            article{
+                flex: 2;
+                p{
+                    @extend %border1;
+                    margin: 0;
+                    display: block;
+                    height: 13vh;
+                    margin-bottom: 10px;
+
+                    text-align: center;
+                    line-height: 13vh;
+
+                    &:nth-of-type(2){
+                        height: 16vh;
+                        line-height: 16vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    height: 10vh;
+    @extend %border1;
+    p{
+        line-height: 10vh;
+        margin: 0;
+        margin-left: 4%;
+    }
+}

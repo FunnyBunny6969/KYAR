@@ -1,0 +1,133 @@
+footer, .container aside section article p, .container aside section aside div, .container aside section, .container aside h1, .container aside form, .container main h1:nth-of-type(2) + section div, .container main h1 + section article, .container main h1, header nav span, header .logo, header {
+  border: 2px black solid;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 14vh;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+header .logo {
+  flex: 1;
+  border-color: rgb(113, 169, 237);
+  margin-right: 10%;
+  height: 10vh;
+  margin-left: 3%;
+  text-align: center;
+  line-height: 10vh;
+}
+header nav {
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+}
+header nav span {
+  line-height: 30px;
+  height: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 69vh;
+  margin-bottom: 2vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container main {
+  flex: 7;
+  margin-right: 25px;
+}
+.container main h1 {
+  margin: 0;
+  display: block;
+  height: 6vh;
+  line-height: 6vh;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.container main h1 + section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+.container main h1 + section article {
+  height: 27vh;
+  width: 30%;
+  text-align: center;
+  line-height: 25vh;
+}
+.container main h1:nth-of-type(2) + section {
+  display: flex;
+  justify-content: space-around;
+}
+.container main h1:nth-of-type(2) + section div {
+  width: 20%;
+  height: 18vh;
+}
+.container aside {
+  flex: 3;
+}
+.container aside form {
+  height: 27vh;
+  margin-bottom: 1vh;
+  text-align: center;
+  line-height: 27vh;
+}
+.container aside h1 {
+  margin: 0;
+  display: block;
+  height: 6vh;
+  line-height: 6vh;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+.container aside section {
+  height: 35vh;
+  display: block;
+  padding: 22px 20px 0px 8px;
+  display: flex;
+}
+.container aside section aside {
+  flex: 1;
+}
+.container aside section aside div {
+  height: 13vh;
+  margin-right: 18px;
+  margin-bottom: 5px;
+}
+.container aside section aside div:nth-of-type(2) {
+  height: 16vh;
+}
+.container aside section article {
+  flex: 2;
+}
+.container aside section article p {
+  margin: 0;
+  display: block;
+  height: 13vh;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 13vh;
+}
+.container aside section article p:nth-of-type(2) {
+  height: 16vh;
+  line-height: 16vh;
+}
+
+footer {
+  height: 10vh;
+}
+footer p {
+  line-height: 10vh;
+  margin: 0;
+  margin-left: 4%;
+}/*# sourceMappingURL=style.css.map */
