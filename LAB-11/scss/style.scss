@@ -11,9 +11,30 @@
     @extend %border1;
     margin-bottom: $mbn;
 
+    font-size: $header_font-size;
+
 }
 
 $border_color_2: rgb(113, 169, 237);
+$header_font-size: 45px;
+
+@function font_size($header-size, $calculate, $tupaya_proverka){
+    @if ($calculate){
+        @return $header-size / 3;
+    }
+    @else if($tupaya_proverka){
+        @return $header-size;
+    }
+    @else{
+        @if ($header-size <= 20px) {
+            @return 14px; 
+        } @else if ($header-size > 20px and $header-size <= 30px) {
+            @return 16px; 
+        } @else {
+            @return 18px;
+        }
+    }   
+}
 
 *{
     box-sizing: border-box;
@@ -37,6 +58,7 @@ header{
 
         text-align: center;
         line-height: 10vh;
+        font-size: $header_font-size;
     }
 
     nav{
@@ -50,9 +72,12 @@ header{
             height: 30px;
             padding-left: 35px;
             padding-right: 35px;
+
+            font-size: font_size($header_font-size, false, false);
         }
     }
 }
+
 
 .container{
     display: flex;
@@ -159,5 +184,6 @@ footer{
         line-height: 10vh;
         margin: 0;
         margin-left: 4%;
+        font-size: font_size(50px, false, true);
     }
 }
