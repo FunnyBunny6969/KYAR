@@ -1,0 +1,25 @@
+store{
+    display: block;
+    margin: 30px;
+    border-collapse: collapse;
+}
+
+head, product{
+    display: table-row;
+}
+
+id, name, description, price{
+    display: table-cell;
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+id{
+    text-align: center;
+}
+
+head {
+    background-color: yellow;
+    text-align: center;
+}

@@ -201,7 +201,7 @@ h1{
 
 .task6 img:nth-child(4){
     margin-bottom: 70px;
-    animation: task6img4 1s linear infinite;
+    animation: task6img4 .5s linear infinite;
 }
 
 @keyframes task6img4 {
@@ -236,3 +236,33 @@ h1 + p:hover{
     color: aqua;
     transition: color 5s linear;
 }
+
+.task52{
+    animation: task32_anim 5s linear;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    perspective-origin: center;
+    margin: 0 auto;
+    width: 600px;
+    height: 600px;
+    border: 10px solid red;
+
+    background-image: url(imgs/1b36c274506177.5c325aff9608a.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes task52_anim{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(90deg);
+    }
+}
+
+/*
+задание 1 - наведение
+задание 5 - другое изменение картинок
+чтобы всё влазило по ширине
+*/
