@@ -22,14 +22,14 @@
         }
 
         div:nth-child(n+2){
-            visibility: hidden;
+            /* visibility: hidden; */
             margin-left: 30px;
             position: relative;
         }
 
-        nav:hover div{
+        /* nav:hover div{
             visibility: visible;
-        }
+        } */
 
         nav div span:nth-child(n+2){
             visibility: hidden;
@@ -41,27 +41,40 @@
             position: relative;
         }
 
-        nav span:hover{
+        nav div span:first-child{
             background-size: auto 60px;
+            background-image: url(imgs/БГТУ.png);
+        }
+
+        nav div:nth-child(2):hover span{
+            background-image: url(imgs/фит.jpg);
+        }
+        
+        nav div:nth-child(3):hover span{
+            background-image: url(imgs/пим.jpg);
+        }
+
+        nav div:nth-child(4):hover span{
+            background-image: url(imgs/хтит.png);
         }
     </style>
 </head>
 <body>
     <nav>
         <div>
-            <span style="background-image: url(imgs/БГТУ.png);">БГТУ</span>
+            <span>БГТУ</span>
         </div>
         <div>
-            <span style="background-image: url(imgs/фит.jpg);">ИТ</span>
+            <span>ИТ</span>
             <span>Кафедра ИСиТ</span>
             <span>Кафедра ИиВД</span>
             <span>Кафедра ПИ</span>
         </div>
         <div>
-            <span style="background-image: url(imgs/пим.jpg);">ПиМ</span>
+            <span>ПиМ</span>
         </div>
         <div>
-            <span style="background-image: url(imgs/хтит.png);">ХТиТ</span>
+            <span>ХТиТ</span>
         </div>
     </nav>
 </body>
