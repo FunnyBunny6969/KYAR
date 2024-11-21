@@ -58,7 +58,6 @@
             margin-bottom: 15px;
         }
 
-
         video {
             width: 100%;
         }
@@ -74,8 +73,9 @@
         nav a{
             display: block;
             text-decoration: unset;
+            color: black;
             flex: 1;
-            height: 35px;
+            line-height: 35px;
             align-content: space-around;
             border: 1px black solid;
             border-radius: 5px;
@@ -124,6 +124,20 @@
         }
 
         @media (max-width: 900px){
+            nav{
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-bottom: 0;
+            }
+
+            nav a{
+                display: block;
+                line-height: 35px;
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-bottom: 20px;
+            }
+
             main{
                 flex-direction: column;
             }
