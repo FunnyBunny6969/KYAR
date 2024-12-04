@@ -2,6 +2,7 @@
     border: 2px black solid;
 }
 
+
 @mixin h11($mbn){
     margin: 0;
     display: block;
@@ -41,6 +42,10 @@ $header_font-size: 45px;
 }
 
 header{
+    background-image: url(../img/img.png);
+    background-size: 100% 100%;
+
+
     display: flex;
     justify-content: space-between;
     height: 14vh;
@@ -49,6 +54,8 @@ header{
     margin-bottom: 3vh;
 
     .logo{
+        background-color: white;
+
         flex: 1;
         @extend %border1;
         border-color: $border_color_2;
@@ -67,6 +74,7 @@ header{
         justify-content: space-around;
 
         span{
+            background-color: white;
             @extend %border1;
             line-height: 30px;
             height: 30px;
@@ -103,9 +111,8 @@ header{
                     width: 30%;
 
                     @extend %border1;
+                    padding: 20px;
 
-                    text-align: center;
-                    line-height: 25vh;
                 }
             }
 
@@ -116,6 +123,11 @@ header{
                     width: 20%;
                     height: 18vh;
                     @extend %border1;
+                    display: flex;
+                    justify-content: center;
+
+                    background-image: url(../img/img.png);
+                    background-size: 100% 100%;
                 }
             }
         }
@@ -128,9 +140,52 @@ header{
             height: 27vh;
             @extend %border1;
             margin-bottom: 1vh;
+            padding: 20px;
+            font-size: 20px;
+            input{
+                display: block;
+                @extend %border1;
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
 
-            text-align: center;
-            line-height: 27vh;
+            div{
+                display: flex;
+                justify-content: space-between;
+                padding-right: 40px;
+                padding-left: 40px;
+            label{
+                display: block;
+                height: 70px;
+                line-height: 70px;
+                width: 20%;
+                margin-bottom:10px;
+                text-align: right;
+            }
+            textarea{
+                @extend %border1;
+                display: inline-block;
+                height: 70px;
+                width: 70%;
+                font-size: 20px;
+            }
+        }
+            button{
+                @extend %border1;
+                display: block;
+                margin: 0 auto;
+                height:40px;
+                font-size: 30px;
+                margin-top:10px;
+                width: 220px;
+            }
+            button:hover{
+                background-image: url(../img/img.png);
+                background-size: 100% 100%;
+                
+            }
+            
         }
 
         h1{
@@ -146,6 +201,9 @@ header{
             aside{
                 flex: 1;
                 div{
+                    background-image: url(../img/img.png);
+                    background-size: 100% 100%;
+
                     @extend %border1;
                     height: 13vh;
                     margin-right: 18px;
@@ -163,13 +221,11 @@ header{
                     display: block;
                     height: 13vh;
                     margin-bottom: 10px;
+                    padding: 20px;
 
-                    text-align: center;
-                    line-height: 13vh;
 
                     &:nth-of-type(2){
                         height: 16vh;
-                        line-height: 16vh;
                     }
                 }
             }

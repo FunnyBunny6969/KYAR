@@ -1,4 +1,4 @@
-footer, .container aside section article p, .container aside section aside div, .container aside section, .container aside h1, .container aside form, .container main h1:nth-of-type(2) + section div, .container main h1 + section article, .container main h1, header nav span, header .logo, header {
+footer, .container aside section article p, .container aside section aside div, .container aside section, .container aside h1, .container aside form button, .container aside form div textarea, .container aside form input, .container aside form, .container main h1:nth-of-type(2) + section div, .container main h1 + section article, .container main h1, header nav span, header .logo, header {
   border: 2px black solid;
 }
 
@@ -7,6 +7,8 @@ footer, .container aside section article p, .container aside section aside div, 
 }
 
 header {
+  background-image: url(../img/img.png);
+  background-size: 100% 100%;
   display: flex;
   justify-content: space-between;
   height: 14vh;
@@ -14,6 +16,7 @@ header {
   margin-bottom: 3vh;
 }
 header .logo {
+  background-color: white;
   flex: 1;
   border-color: rgb(113, 169, 237);
   margin-right: 10%;
@@ -29,6 +32,7 @@ header nav {
   justify-content: space-around;
 }
 header nav span {
+  background-color: white;
   line-height: 30px;
   height: 30px;
   padding-left: 35px;
@@ -65,8 +69,7 @@ header nav span {
 .container main h1 + section article {
   height: 27vh;
   width: 30%;
-  text-align: center;
-  line-height: 25vh;
+  padding: 20px;
 }
 .container main h1:nth-of-type(2) + section {
   display: flex;
@@ -75,6 +78,10 @@ header nav span {
 .container main h1:nth-of-type(2) + section div {
   width: 20%;
   height: 18vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(../img/img.png);
+  background-size: 100% 100%;
 }
 .container aside {
   flex: 3;
@@ -82,8 +89,46 @@ header nav span {
 .container aside form {
   height: 27vh;
   margin-bottom: 1vh;
-  text-align: center;
-  line-height: 27vh;
+  padding: 20px;
+  font-size: 20px;
+}
+.container aside form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.container aside form div {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.container aside form div label {
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  width: 20%;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.container aside form div textarea {
+  display: inline-block;
+  height: 70px;
+  width: 70%;
+  font-size: 20px;
+}
+.container aside form button {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 30px;
+  margin-top: 10px;
+  width: 220px;
+}
+.container aside form button:hover {
+  background-image: url(../img/img.png);
+  background-size: 100% 100%;
 }
 .container aside h1 {
   margin: 0;
@@ -104,6 +149,8 @@ header nav span {
   flex: 1;
 }
 .container aside section aside div {
+  background-image: url(../img/img.png);
+  background-size: 100% 100%;
   height: 13vh;
   margin-right: 18px;
   margin-bottom: 5px;
@@ -119,12 +166,10 @@ header nav span {
   display: block;
   height: 13vh;
   margin-bottom: 10px;
-  text-align: center;
-  line-height: 13vh;
+  padding: 20px;
 }
 .container aside section article p:nth-of-type(2) {
   height: 16vh;
-  line-height: 16vh;
 }
 
 footer {
