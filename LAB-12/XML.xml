@@ -2,10 +2,10 @@
 <?xml-stylesheet type="text/css" href="style/forXML1.css"?>
 <store>
     <head>
-        <id>ID</id>
-        <name>NAME</name>
-        <description>DESCRIPTION</description>
-        <price>PRICE</price>
+        <nid>ID</nid>
+        <nname>NAME</nname>
+        <ndescription>DESCRIPTION</ndescription>
+        <nprice>PRICE</nprice>
     </head>
 
      <product>

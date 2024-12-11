@@ -3,7 +3,7 @@
 
 <!DOCTYPE store[
 <!ELEMENT store (head, product+)>
-<!ELEMENT head (id, name, description, price)>
+<!ELEMENT head (nid, nname, ndescription, nprice)>
 <!ELEMENT product (id, name, description, price)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
@@ -18,10 +18,10 @@
 
 <store>
     <head>
-        <id>&id_;</id>
-        <name>&name_;</name>
-        <description>&description_;</description>
-        <price>&price_;</price>
+        <nid>&id_;</nid>
+        <nname>&name_;</nname>
+        <ndescription>&description_;</ndescription>
+        <nprice>&price_;</nprice>
     </head>
 
      <product>
