@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style/forXML1.css"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<store>
+    <head>
+        <nid>ID</nid>
+        <nname>NAME</nname>
+        <ndescription>DESCRIPTION</ndescription>
+        <nprice>PRICE</nprice>
+    </head>
+
+    <product>
+        <id>1</id>
+        <name>Смартфон</name>
+        <description>Современный смартфон с отличной камерой</description>
+        <price>29999</price>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Наушники</name>
+        <description>Беспроводные наушники с шумоподавлением</description>
+        <price>7999</price>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Клавиатура</name>
+        <description>Игровая клавиатура с подсветкой</description>
+        <price>3499</price>
+    </product>
+    <product>
+        <id>4</id>
+        <name>Мышь</name>
+        <description>Эргономичная мышь с высоким DPI</description>
+        <price>1999</price>
+    </product>
+     <product>
+        <id>5</id>
+        <name>Ноутбук</name>
+        <description>Мощный ноутбук для работы и игр</description>
+        <price>59999</price>
+    </product>
+</store>

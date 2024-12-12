@@ -1,0 +1,21 @@
+store{
+    display: block;
+    margin: 30px;
+    border-collapse: collapse;
+}
+
+head, product{
+    display: table-row;
+}
+
+nid, nname, ndescription, nprice, id, name, description, price{
+    display: table-cell;
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+nid, nname, ndescription, nprice {
+    background-color: yellow;
+    text-align: center;
+}

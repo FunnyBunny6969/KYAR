@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<attestation>
+    <student>
+        <name>Иванов Иван</name>
+        <grade>3</grade>
+    </student>
+    <student>
+        <name>Петров Петр</name>
+        <grade>9</grade>
+    </student>
+    <student>
+        <name>Сидорова Анна</name>
+        <grade>5</grade>
+    </student>
+    <student>
+        <name>Кузнецова Мария</name>
+        <grade>10</grade>
+    </student>
+    <student>
+        <name>Смирнов Алексей</name>
+        <grade>2</grade>
+    </student>
+</attestation>
