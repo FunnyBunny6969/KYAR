@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style/attestation_style.xslt"?>
 
 <attestation>
+    <head>
+        <nname>ИМЯ</nname>
+        <ngrade>ОЦЕНКА</ngrade>
+    </head>
+
     <student>
         <name>Иванов Иван</name>
         <grade>3</grade>
@@ -15,10 +21,14 @@
     </student>
     <student>
         <name>Кузнецова Мария</name>
-        <grade>10</grade>
+        <grade>7</grade>
+    </student>
+    <student>
+        <name>Мухамедов Абу</name>
+        <grade>0</grade>
     </student>
     <student>
         <name>Смирнов Алексей</name>
-        <grade>2</grade>
+        <grade>10</grade>
     </student>
 </attestation>
