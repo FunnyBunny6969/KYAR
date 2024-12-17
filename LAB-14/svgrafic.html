@@ -26,27 +26,43 @@
         <polyline points="0,166 410,166 290,230 825,230" fill="none" stroke="rgb(69,3,130)" stroke-width="3"/>
     </svg>
 
-    <h3>Идея ясна но надо переделать</h3>
-    <svg class="svg1" width="1000" height="450">
+    <svg class="svg1" width="400" height="600">
     
-    <image href="svg/tree.svg" x="200" y="-60" width="600"/>
+    <image href="svg/real_tree.svg" x="0" y="0" width="400"/>
 
-    <path id="idname" d="M449,-30 C449,70 568,0 568,0" stroke="red" stroke-width="6" fill="none">
-        <animate attributeName="stroke" from="purple" to="red" fill="freeze" dur="1s" repeatCount="200"/>
+    <path d="M169,80 C139,180 288,150 288,150" stroke-width="6" fill="none">
+        <animate 
+        attributeName="stroke" 
+        values="magenta;red;magenta" 
+        keyTimes="0;0.5;1" 
+        dur="1s" 
+        repeatCount="indefinite"/>
     </path>
-    <path id="idname" d="M399,110 C399,110 568,190 568,0" stroke="yellow" stroke-width="6" fill="none" >
-        <animate attributeName="stroke" from="red" to="yellow" fill="freeze" dur="1s" repeatCount="200"/>
+    <path d="M99,160 C129,230 288,270 288,150" stroke-width="6" fill="none">
+        <animate 
+        attributeName="stroke" 
+        values="red;yellow;red" 
+        keyTimes="0;0.5;1" 
+        dur="1s" 
+        repeatCount="indefinite"/>
     </path>
-    <path id="idname" d="M399,110 C399,300 628,170 628,160"
-    stroke="green" stroke-width="6" fill="none" >
-    <animate attributeName="stroke" from="yellow" to="green" fill="freeze" dur="1s" repeatCount="200"/>
+    <path d="M99,160 C75,430 348,230 348,230" stroke-width="6" fill="none">
+        <animate 
+        attributeName="stroke" 
+        values="yellow;green;yellow" 
+        keyTimes="0;0.5;1" 
+        dur="1s" 
+        repeatCount="indefinite"/>
     </path>
-    <path id="idname" d="M350,280 C350,280 568,390 628,160"
-    stroke="blue" stroke-width="6" fill="none" >
-    <animate attributeName="stroke" from="green" to="blue" fill="freeze" dur="1s" repeatCount="200"/>
+    <path d="M60,330 C120,380 278,450 348,230" stroke-width="6" fill="none">
+        <animate 
+        attributeName="stroke" 
+        values="blue;lime;blue" 
+        keyTimes="0;0.5;1" 
+        dur="1s" 
+        repeatCount="indefinite"/>
     </path>
-    <!-- образец -->
-    <path d="M350,280 C320,480 692,390 692,360" stroke-width="6" fill="none">
+    <path d="M60,330 C80,450 202,450 382,400" stroke-width="6" fill="none">
         <animate 
         attributeName="stroke" 
         values="aqua;purple;aqua" 
