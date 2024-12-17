@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svGGrafic</title>
+    <style>
+        .svg1{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <svg class="svg1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="630" height="300">
+    <path id="idname" d="M30,30 h50 v70 L200,220 A150,100 -15 0 1 500,220 C550,300 700,330 500,20 S" stroke="blue" stroke-width="3" fill="none"/>
+    <text x="0" font-family="Arial" font-size="36px" fill="purple"> 
+        <textPath xlink:href="#idname">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, odit.</textPath>
+    </text>
+    </svg>
+    <svg class="svg1" width="825" height="235">
+        <circle cx="75" cy="75" r="75" fill="blue" />
+        <rect x="168" y="0" width="180" height="150" fill="red"/>
+        <ellipse rx="130" ry="72" cx="488" cy="75" fill="green"/>
+        <polygon points="610,173 705,18 800,173" fill="yellow"/>
+        <polyline points="0,166 410,166 290,230 825,230" fill="none" stroke="rgb(69,3,130)" stroke-width="3"/>
+    </svg>
+</body>
+</html>
