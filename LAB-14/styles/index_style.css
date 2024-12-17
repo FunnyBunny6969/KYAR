@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6{
+    color: purple;
+    font-family: Monotype Corsiva;
+}
+
+.point_1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    color: red;
+}
+
+.point_2{
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+    font-size: 20pt;
+}
+
+.point_3{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22pt;
+}
+
+text{
+    fill: white;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}

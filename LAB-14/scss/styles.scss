@@ -1,0 +1,34 @@
+%for_ul{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+h1, h2, h3{
+    color: purple;
+    font-family: Monotype Corsiva;
+}
+
+text{
+    fill: white;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+ol{
+
+    ul{
+        @extend %for_ul;
+        font-size: 18pt;
+        color: red;
+    }
+    ul{
+        @extend %for_ul;
+        font-size: 20pt;
+        color: yellow;
+    }
+    ul{
+        @extend %for_ul;
+        font-size: 22pt;
+        color: green;
+    }
+}
