@@ -1,6 +1,3 @@
-%for_ul{
-    font-family: 'Times New Roman', Times, serif;
-}
 
 
 h1, h2, h3{
@@ -8,27 +5,30 @@ h1, h2, h3{
     font-family: Monotype Corsiva;
 }
 
-text{
-    fill: white;
-    text-anchor: middle;
-    dominant-baseline: middle;
-}
 
 ol{
+    font-family: 'Times New Roman', Times, serif;
 
-    ul{
-        @extend %for_ul;
+    &>li:nth-child(1) ul{
         font-size: 18pt;
         color: red;
     }
-    ul{
-        @extend %for_ul;
+    &>li:nth-child(2) ul{
         font-size: 20pt;
         color: yellow;
     }
-    ul{
-        @extend %for_ul;
+    &>li:nth-child(3) ul{
         font-size: 22pt;
         color: green;
+    }
+}
+
+svg{
+    a{
+        text{
+            fill: white;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
     }
 }

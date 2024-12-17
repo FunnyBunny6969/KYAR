@@ -1,0 +1,26 @@
+h1, h2, h3 {
+  color: purple;
+  font-family: Monotype Corsiva;
+}
+
+ol {
+  font-family: "Times New Roman", Times, serif;
+}
+ol > li:nth-child(1) ul {
+  font-size: 18pt;
+  color: red;
+}
+ol > li:nth-child(2) ul {
+  font-size: 20pt;
+  color: yellow;
+}
+ol > li:nth-child(3) ul {
+  font-size: 22pt;
+  color: green;
+}
+
+svg a text {
+  fill: white;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}/*# sourceMappingURL=styles.css.map */
