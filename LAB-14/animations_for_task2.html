@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        .svg1{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <svg class="svg1" width="825" height="235">
+        <defs>
+            <linearGradient id = "TriangleGradient">
+                <stop offset = "0%" stop-color = "green"/>
+                <stop offset = "100%" stop-color = "orange"/>
+            </linearGradient>
+        </defs>
+
+
+
+        <circle cx="80" cy="80" r="75" fill="blue" stroke-width="10" stroke="black">
+            <animate
+            attributeName="stroke"
+            dur="1s"
+            keyTimes="0;0.5;1"
+            values="black;yellow;black"
+            begin="mouseover"/>
+        </circle>
+        <rect x="168" y="5" width="180" height="150" fill="red" stroke="black" >
+            <animate
+            attributeName="stroke-width"
+            dur="1s"
+            keyTimes="0;0.5;1" 
+            values="0;10;0" 
+            repeatCount="indefinite"/>
+        </rect>
+        <ellipse rx="130" ry="72" cx="488" cy="75" fill="green">
+            <animate
+            attributeName="fill" 
+            dur="1s" 
+            begin="click" 
+            values="green;aqua;green"
+            keyTimes="0;0.5;1"/>
+        </ellipse>
+        <polygon points="610,173 705,18 800,173" fill="url(#TriangleGradient)"/>
+        <polyline points="0,166 410,166 290,230 825,230" fill="none" stroke="rgb(69,3,130)" stroke-width="3"/>
+    </svg>
+</body>
+</html>
