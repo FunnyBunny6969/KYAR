@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .cont{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        img{
+            display: block;
+            width:  600px;
+            height: 600px;
+            margin: 20px;
+            border-radius: 25px;
+        }
+
+        p{
+            display: none;
+            width: 600px;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 25px;
+            font-size: 40px;
+            background-color: chocolate;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div>
+            <img src="img/3535546.jpg">
+            <p id="text_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, officia! Tenetur minus id temporibus. Eligendi reiciendis et error, dolorem possimus magni voluptatibus nemo delectus, atque earum ut eos aut, exercitationem dignissimos rerum ab voluptatum harum molestiae ullam? Fuga culpa, soluta nemo autem itaque possimus veniam?</p>
+        </div>
+        <img src="img/ibm.png">
+        <img src="img/cute.png">
+    </div>
+    
+
+    <script>
+        let img = document.getElementsByTagName("img");
+
+        img[0].addEventListener("mouseover", function(){fimg0In(img[0])});
+        img[0].addEventListener("mouseout", function(){fimg0Out(img[0])});
+        function fimg0In(pic){
+            document.getElementById("text_description").style.display="block";
+            pic.style.display = "none";
+        }
+        function fimg0Out(pic){
+            document.getElementById("text_description").style.display="none";
+            pic.style.display = "block";
+        }
+
+        img[1].addEventListener("click", function(){fimg1(img[1])});
+        let border_on = false;
+        function fimg1(pic){
+            if(border_on == false){pic.style.border="10px solid red";}
+            else{pic.style.border="none";}
+            border_on = !border_on;
+        }
+        
+        img[2].addEventListener("mouseover", function(){fimg2In(img[2])});
+        img[2].addEventListener("mouseout", function(){fimg2Out(img[2])});
+        function fimg2In(pic){ pic.src = "img/3535546.jpg"; }
+        function fimg2Out(pic){ pic.src = "img/cute.png"; }
+    </script>
+</body>
+</html>
