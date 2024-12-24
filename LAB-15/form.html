@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма с вопросами</title>
+    <style>
+        h1{
+            margin: 0;
+            font-size: 50px;
+            margin-bottom: 45px;
+        }
+
+        form {
+            width: 1035px;
+
+            margin: 20px;
+            padding-left: 70px;
+            padding-right: 70px;
+            padding-bottom: 35px;
+
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 35px;
+        }
+        .form-group > label{
+            font-size: 35px;
+            height: 50px;
+            width: 335px;
+            margin-right: 35px;
+            text-align: right;
+        }
+        .right{
+            font-size: 30px;
+            padding-left:10px;
+            width: 400px;
+            border: 2px solid grey;
+            border-radius: 7px;
+        }
+
+        .checkboxes {
+            width: 600px;
+        }
+        .checkboxes input, .checkboxes label{
+            display: inline-block;
+            margin:0;
+        }
+        .checkboxes label{
+            margin-right: 15px;
+            font-size: 35px;
+        }
+        .checkboxes input{
+            height: 30px;
+            width:  30px;
+        }
+
+        #button{
+            width: 185px; 
+            height: 50px; 
+            font-size:30px;
+            border-radius: 7px;
+            border: 2px grey solid;
+            margin-top: 30px;
+        }
+
+        footer{
+            text-align: center;
+            width: 1035px;
+
+            margin: 20px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        footer h1{
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer h1:first-child{
+            font-size: 65px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Данные студента</h1>
+        <div class="form-group">
+            <label>Имя студента</label>
+            <input type="text" class="right" placeholder="обязательно заполнить">
+        </div>
+        <div class="form-group">
+            <label>Фамилия студента</label>
+            <input type="text" class="right" placeholder="обязательно заполнить">
+        </div>
+        <div class="form-group">
+            <label>Отчество студента</label>
+            <input type="text" class="right" placeholder="обязательно заполнить">
+        </div>
+        <div class="form-group">
+            <label>Адрес почты</label>
+            <input type="email" class="right">
+        </div>
+        <div class="form-group">
+            <label>Контактный номер</label>
+            <input type="text" class="right">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 50px;">
+            <label>Какую социальную сеть вы используете?</label>
+            <div class="checkboxes">
+                <input type="checkbox" id="check1">
+                <label for="check1">VK</label>
+                <input type="checkbox" id="chck2">
+                <label for="check2">Facebook</label>
+                <input type="checkbox" id="check3">
+                <label for="check3">Instagram</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Группа: </label>
+            <select class="right">
+                <option value="">Выберите группу</option>
+                <option value="1">6 группа</option>
+                <option value="2">шестая группа</option>
+                <option value="3">6 ПИ</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Факультет: </label>
+            <select class="right">
+                <option value="">Выберите факультет</option>
+                <option value="1">ФИТ</option>
+                <option value="2">любимый ФИТ</option>
+                <option value="3">лучший ФИТ</option>
+                <option value="4">обожаю ФИТ</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Курс: </label>
+            <select class="right">
+                <option value="">Выберите курс</option>
+                <option value="1">1 курс</option>
+                <option value="2">2 курс</option>
+                <option value="3">3 курс</option>
+                <option value="4">4 курс</option>
+                <option value="5">5 курс</option>
+                <option value="6">6 курс</option>
+            </select>
+        </div>
+
+        <input id="button" type="button" value="отправить">
+    </form>
+    
+    <footer></footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
